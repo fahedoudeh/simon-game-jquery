@@ -23,7 +23,8 @@ $(document).on("keydown", () => {
 
 // Support clicks (and optionally touch)
 $(".btn").on("click", function () {
-  if (!started || !acceptingInput) return; // ignore when not ready
+  if (!started || !acceptingInput) return; // ignore when not ready 
+  
 
   const userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
